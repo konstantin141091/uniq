@@ -19,6 +19,7 @@ Route::get('/about', 'IndexController@about')->name('about');
 Route::get('/contacts', 'IndexController@contacts')->name('contacts');
 Route::get('/service', 'IndexController@service')->name('service');
 Route::get('/equipment', 'IndexController@equipment')->name('equipment');
+Route::get('/calculate', 'IndexController@calculate')->name('calculate');
 
 //авторизация в админке
 Route::group([

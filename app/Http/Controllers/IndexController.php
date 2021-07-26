@@ -41,4 +41,9 @@ class IndexController extends Controller
     {
         return view('pages.equipment');
     }
+
+    public function calculate()
+    {
+        return view('pages.calculate');
+    }
 }
