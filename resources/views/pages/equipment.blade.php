@@ -15,33 +15,47 @@
         </nav>
 
         <section class="mg-bt-95">
-            <h1 class="section__title mg-bt-35 ckeditor" id="equipment_editor1" data-dir="equipment" @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+            <h1 class="section__title mg-bt-35 ckeditor" id="equipment_editor1" data-dir="equipment"
+                @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
                 @include('content.equipment.equipment_editor1')
             </h1>
 
             <div class="page-description">
                 <div class="page-description__text">
-                    <p>Кроме изготовления грузоподъёмных кранов, компания UNIQ CRANE также выступает поставщиком различного сопутствующего оборудования.</p>
-                    <p>Мы сотрудничаем с различными производителями крановых комплектующих как в России, так и в соседних дружественных государствах.
-                    </p></div>
+                    <p class="ckeditor" id="equipment_editor2" data-dir="equipment"
+                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                        @include('content.equipment.equipment_editor2')
+                    </p>
+                    <p class="ckeditor" id="equipment_editor3" data-dir="equipment"
+                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                        @include('content.equipment.equipment_editor3')
+                    </p>
+                </div>
                 <div class="page-description__text">
-                    <p>Хорошие дилерские условия позволяют нам реализовывать продукцию по ценам производителя. На сегодняшний день компания UNIQ CRANE осуществляет поставку следующих типов продукции, которые можно определить в две группы: крановые комплектующие и сопутствующее оборудование</p>
+                    <p class="ckeditor" id="equipment_editor4" data-dir="equipment"
+                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                        @include('content.equipment.equipment_editor4')
+                    </p>
                 </div>
             </div>
         </section>
 
         <section class="mg-bt-185">
-            <h2 class="section__title section__title--1 mg-bt-35">Крановые комплектующие</h2>
+            <h2 class="section__title section__title--1 mg-bt-35 ckeditor" id="equipment_editor5" data-dir="equipment"
+                @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                @include('content.equipment.equipment_editor5')
+            </h2>
 
             <div class="cards">
 
                 <div class="cards-item">
 
                     <div class="cards-title">
-                        <p>Крановые
-                            металлоконструкции</p>
+                        <p class="ckeditor" id="equipment_editor6" data-dir="equipment"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.equipment.equipment_editor6')
+                        </p>
                     </div>
-
                     <div class="cards-item__circle">
                         <img class="cards__image cards__image--in-circle" src="./assets/img/cards-item/1.svg" alt="">
                     </div>
@@ -51,8 +65,9 @@
                 <div class="cards-item">
 
                     <div class="cards-title">
-                        <p>Крановые
-                            этакады
+                        <p class="ckeditor" id="equipment_editor7" data-dir="equipment"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.equipment.equipment_editor7')
                         </p>
                     </div>
 
@@ -65,8 +80,9 @@
                 <div class="cards-item">
 
                     <div class="cards-title">
-                        <p>Пульты
-                            управления
+                        <p class="ckeditor" id="equipment_editor8" data-dir="equipment"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.equipment.equipment_editor8')
                         </p>
                     </div>
 
@@ -79,8 +95,9 @@
                 <div class="cards-item">
 
                     <div class="cards-title">
-                        <p>Грузовые
-                            тележки
+                        <p class="ckeditor" id="equipment_editor9" data-dir="equipment"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.equipment.equipment_editor9')
                         </p>
                     </div>
 
@@ -93,8 +110,9 @@
                 <div class="cards-item">
 
                     <div class="cards-title">
-                        <p>Крановая кабина
-                            (опционально)
+                        <p class="ckeditor" id="equipment_editor10" data-dir="equipment"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.equipment.equipment_editor10')
                         </p>
                     </div>
 
@@ -107,8 +125,9 @@
                 <div class="cards-item">
 
                     <div class="cards-title">
-                        <p>Концевые
-                            балки
+                        <p class="ckeditor" id="equipment_editor11" data-dir="equipment"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.equipment.equipment_editor11')
                         </p>
                     </div>
 
@@ -122,8 +141,9 @@
                 <div class="cards-item">
 
                     <div class="cards-title">
-                        <p>Мотор-
-                            редукторы
+                        <p class="ckeditor" id="equipment_editor12" data-dir="equipment"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.equipment.equipment_editor12')
                         </p>
                     </div>
 
@@ -136,8 +156,9 @@
                 <div class="cards-item">
 
                     <div class="cards-title">
-                        <p>Системы
-                            токопровода
+                        <p class="ckeditor" id="equipment_editor13" data-dir="equipment"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.equipment.equipment_editor13')
                         </p>
                     </div>
 
@@ -146,22 +167,24 @@
                     </div>
                     <a href="#" class="cards-item__link-button"></a>
                 </div>
-
-
-
             </div>
         </section>
 
 
         <section class="mg-bt-150">
-            <h2 class="section__title section__title--1 mg-bt-35">Сопутствующее оборудование</h2>
-
+            <h2 class="section__title section__title--1 mg-bt-35 ckeditor" id="equipment_editor14" data-dir="equipment"
+                @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                @include('content.equipment.equipment_editor14')
+            </h2>
             <div class="cards">
 
                 <div class="cards-item">
 
                     <div class="cards-title">
-                        <p>Тали</p>
+                        <p class="ckeditor" id="equipment_editor15" data-dir="equipment"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.equipment.equipment_editor15')
+                        </p>
                     </div>
 
                     <div class="cards-item__circle">
@@ -173,8 +196,9 @@
                 <div class="cards-item">
 
                     <div class="cards-title">
-                        <p>Электрические
-                            канатные тали
+                        <p class="ckeditor" id="equipment_editor16" data-dir="equipment"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.equipment.equipment_editor16')
                         </p>
                     </div>
 
@@ -187,8 +211,9 @@
                 <div class="cards-item">
 
                     <div class="cards-title">
-                        <p>Крановые
-                            весы
+                        <p class="ckeditor" id="equipment_editor17" data-dir="equipment"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.equipment.equipment_editor17')
                         </p>
                     </div>
 
@@ -201,8 +226,9 @@
                 <div class="cards-item">
 
                     <div class="cards-title">
-                        <p>Ограничители
-                            грузоподъемности
+                        <p class="ckeditor" id="equipment_editor18" data-dir="equipment"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.equipment.equipment_editor18')
                         </p>
                     </div>
 
@@ -215,8 +241,9 @@
                 <div class="cards-item">
 
                     <div class="cards-title">
-                        <p>Частотные
-                            преобразователи
+                        <p class="ckeditor" id="equipment_editor19" data-dir="equipment"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.equipment.equipment_editor19')
                         </p>
                     </div>
 
@@ -229,8 +256,9 @@
                 <div class="cards-item">
 
                     <div class="cards-title">
-                        <p>Радиоуправление
-
+                        <p class="ckeditor" id="equipment_editor20" data-dir="equipment"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.equipment.equipment_editor20')
                         </p>
                     </div>
 

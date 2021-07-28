@@ -12,16 +12,18 @@
 
                 <nav class="site-navigation">
                     <nav class="mg-bt-35">
-                        <a class="nav-pages" href="index.html">Главная</a>
+                        <a class="nav-pages" href="{{ route('index') }}">Главная</a>
                         <span class="nav-pages__slash">/</span>
-                        <a class="nav-pages" href="about-factory.html">Рассчитать стоимость крана</a>
+                        <a class="nav-pages" href="{{ route('about') }}">Рассчитать стоимость крана</a>
                     </nav>
                 </nav>
 
                 <section>
-                    <h1 class="section__title choose-crane-type__header">Рассчитать стоимость крана</h1>
+                    <h1 class="section__title choose-crane-type__header ckeditor" id="calculate_editor1" data-dir="calculate"
+                        @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                        @include('content.calculate.calculate_editor1')
+                    </h1>
                 </section>
-
             </div>
 
         </div>
@@ -30,9 +32,3 @@
         </div>
     </div>
 @endsection
-{{--<script>--}}
-{{--  import CalculateComponent from "../../js/components/CalculateComponent";--}}
-{{--  export default {--}}
-{{--    components: {CalculateComponent}--}}
-{{--  }--}}
-{{--</script>--}}

@@ -13,7 +13,10 @@
         </nav>
 
         <section class="mg-bt-50">
-            <h1 class="section__title mg-bt-35">Контакты</h1>
+            <h1 class="section__title mg-bt-35">
+                @include('content.contacts.contacts_editor1')
+                Контакты
+            </h1>
         </section>
 
 
@@ -25,17 +28,24 @@
 
                 <div class="page-navigation page-navigation--map">
 
-                    <button class="page-navigation__button page-navigation__button--active"> <span>г. Москва г. Московский
-        ул. Хабарова д. 2
-        </span> </button>
-                    <button class="page-navigation__button"> <span>д. Машково, Новомарусинский
-        проезд, д. 10
-        </span> </button>
-                    <button class="page-navigation__button"> <span>Район, п. Шолоховский,
-        ул. Социалистическая д.7
-        </span> </button>
+                    <button class="page-navigation__button page-navigation__button--active">
+                        <span>
+                            г. Москва г. Московский ул. Хабарова д. 2
+                        </span>
+                    </button>
+                    <button class="page-navigation__button">
+                        <span>
+                            д. Машково, Новомарусинский проезд, д. 10
+                        </span>
+                    </button>
+                    <button class="page-navigation__button">
+                        <span>
+                            Район, п. Шолоховский, ул. Социалистическая д.7
+                        </span>
+                    </button>
 
-                </div></div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>

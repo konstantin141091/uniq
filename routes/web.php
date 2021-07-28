@@ -39,5 +39,5 @@ Route::group([
 ], function() {
     Route::get('/', 'AdminController@index')->name('index');
     Route::post('/edit', 'AdminController@editContent')->name('edit');
-  //  Route::get('/makeInclude', 'CmsController@makeInclude')->name('makeInclude');
+//    Route::get('/makeInclude', 'CmsController@makeInclude')->name('makeInclude');
 });

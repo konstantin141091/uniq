@@ -15,11 +15,19 @@
         </nav>
 
         <section class="mg-bt-50">
-            <h1 class="section__title mg-bt-35">Крановый сервис</h1>
+            <h1 class="section__title mg-bt-35 ckeditor" id="service_editor1" data-dir="service"
+                @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                @include('content.service.service_editor1')
+            </h1>
 
             <div class="page-description">
                 <div class="page-description__text">
-                    <p>Кроме производства грузоподъёмного оборудования наш завод осуществляет все возможные сервисные работы, от проектирования до обслуживания кранов.</p>    </div>
+                    <p class="ckeditor" id="service_editor2" data-dir="service"
+                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                        @include('content.service.service_editor2')
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section class="mg-bt-150">
@@ -32,10 +40,15 @@
 
                     <div class="cards-mask">
 
-                        <p class="cards-mask__title">Индивидуальная
-                            покраска крана</p>
-                        <p class="cards-mask__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a  class="cards-mask__more"href="">Читать подробнее</a>
+                        <p class="cards-mask__title ckeditor" id="service_editor3" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor3')
+                        </p>
+                        <p class="cards-mask__text ckeditor" id="service_editor4" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor4')
+                        </p>
+                        <a  class="cards-mask__more" href="">Читать подробнее</a>
                     </div>
                 </div>
 
@@ -46,9 +59,15 @@
 
                     <div class="cards-mask">
 
-                        <p class="cards-mask__title">Монтаж кранов</p>
-                        <p class="cards-mask__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a  class="cards-mask__more"href="">Читать подробнее</a>
+                        <p class="cards-mask__title ckeditor" id="service_editor5" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor5')
+                        </p>
+                        <p class="cards-mask__text ckeditor" id="service_editor6" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor6')
+                        </p>
+                        <a  class="cards-mask__more" href="">Читать подробнее</a>
                     </div>
                 </div>
 
@@ -59,10 +78,15 @@
 
                     <div class="cards-mask">
 
-                        <p class="cards-mask__title">Монтаж крановых
-                            конструкций</p>
-                        <p class="cards-mask__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a  class="cards-mask__more"href="">Читать подробнее</a>
+                        <p class="cards-mask__title ckeditor" id="service_editor7" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor7')
+                        </p>
+                        <p class="cards-mask__text ckeditor" id="service_editor8" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor8')
+                        </p>
+                        <a  class="cards-mask__more" href="">Читать подробнее</a>
                     </div>
                 </div>
 
@@ -73,9 +97,15 @@
 
                     <div class="cards-mask">
 
-                        <p class="cards-mask__title">Модернизация</p>
-                        <p class="cards-mask__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a  class="cards-mask__more"href="">Читать подробнее</a>
+                        <p class="cards-mask__title ckeditor" id="service_editor9" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor9')
+                        </p>
+                        <p class="cards-mask__text ckeditor" id="service_editor10" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor10')
+                        </p>
+                        <a  class="cards-mask__more" href="">Читать подробнее</a>
                     </div>
                 </div>
 
@@ -86,9 +116,15 @@
 
                     <div class="cards-mask">
 
-                        <p class="cards-mask__title">Ремонт</p>
-                        <p class="cards-mask__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a  class="cards-mask__more"href="">Читать подробнее</a>
+                        <p class="cards-mask__title ckeditor" id="service_editor11" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor11')
+                        </p>
+                        <p class="cards-mask__text ckeditor" id="service_editor12" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor12')
+                        </p>
+                        <a  class="cards-mask__more" href="">Читать подробнее</a>
                     </div>
                 </div>
 
@@ -99,10 +135,15 @@
 
                     <div class="cards-mask">
 
-                        <p class="cards-mask__title">Техническое
-                            обслуживание</p>
-                        <p class="cards-mask__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a  class="cards-mask__more"href="">Читать подробнее</a>
+                        <p class="cards-mask__title ckeditor" id="service_editor13" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor13')
+                        </p>
+                        <p class="cards-mask__text ckeditor" id="service_editor14" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor14')
+                        </p>
+                        <a  class="cards-mask__more" href="">Читать подробнее</a>
                     </div>
                 </div>
 
@@ -113,9 +154,15 @@
 
                     <div class="cards-mask">
 
-                        <p class="cards-mask__title">Проектирование</p>
-                        <p class="cards-mask__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a  class="cards-mask__more"href="">Читать подробнее</a>
+                        <p class="cards-mask__title ckeditor" id="service_editor15" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor15')
+                        </p>
+                        <p class="cards-mask__text ckeditor" id="service_editor16" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor16')
+                        </p>
+                        <a  class="cards-mask__more" href="">Читать подробнее</a>
                     </div>
                 </div>
 
@@ -126,9 +173,15 @@
 
                     <div class="cards-mask">
 
-                        <p class="cards-mask__title">Доставка</p>
-                        <p class="cards-mask__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a  class="cards-mask__more"href="">Читать подробнее</a>
+                        <p class="cards-mask__title ckeditor" id="service_editor17" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor17')
+                        </p>
+                        <p class="cards-mask__text ckeditor" id="service_editor18" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor18')
+                        </p>
+                        <a  class="cards-mask__more" href="">Читать подробнее</a>
                     </div>
                 </div>
 
@@ -139,13 +192,18 @@
 
                     <div class="cards-mask">
 
-                        <p class="cards-mask__title">Демонтаж кранов</p>
-                        <p class="cards-mask__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a  class="cards-mask__more"href="">Читать подробнее</a>
+                        <p class="cards-mask__title ckeditor" id="service_editor19" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor19')
+                        </p>
+                        <p class="cards-mask__text ckeditor" id="service_editor20" data-dir="service"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.service.service_editor20')
+                        </p>
+                        <a  class="cards-mask__more" href="">Читать подробнее</a>
                     </div>
                 </div>
             </div>
         </section>
-
     </div>
 @endsection

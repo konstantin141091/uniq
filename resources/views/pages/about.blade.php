@@ -10,12 +10,42 @@
 
             <div class="page-navigation">
 
-                <button class="page-navigation__button page-navigation__button--active"> <span>История</span> </button>
-                <button class="page-navigation__button"> <span>Производство</span> </button>
-                <button class="page-navigation__button"> <span>Сертификаты</span> </button>
-                <button class="page-navigation__button"> <span>Преимущества</span> </button>
-                <button class="page-navigation__button"> <span>Наши клиенты</span> </button>
-                <button class="page-navigation__button"> <span>Отзывы</span> </button>
+                <button class="page-navigation__button page-navigation__button--active">
+                    <span class="ckeditor" id="about_editor1" data-dir="about"
+                          @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                        @include('content.about.about_editor1')
+                    </span>
+                </button>
+                <button class="page-navigation__button">
+                    <span class="ckeditor" id="about_editor2" data-dir="about"
+                          @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                        @include('content.about.about_editor2')
+                    </span>
+                </button>
+                <button class="page-navigation__button">
+                    <span class="ckeditor" id="about_editor3" data-dir="about"
+                          @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                        @include('content.about.about_editor3')
+                    </span>
+                </button>
+                <button class="page-navigation__button">
+                    <span class="ckeditor" id="about_editor4" data-dir="about"
+                          @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                        @include('content.about.about_editor4')
+                    </span>
+                </button>
+                <button class="page-navigation__button">
+                    <span class="ckeditor" id="about_editor5" data-dir="about"
+                          @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                        @include('content.about.about_editor5')
+                    </span>
+                </button>
+                <button class="page-navigation__button">
+                    <span class="ckeditor" id="about_editor6" data-dir="about"
+                          @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                        @include('content.about.about_editor6')
+                    </span>
+                </button>
             </div></div>
         <div style="position:relative">
             <img class="page-description__background" src="./assets/img/backgrounds/about-factory.png" alt="">
@@ -30,13 +60,16 @@
                 </nav>
 
                 <section class="mg-bt-50">
-                    <h1 class="section__title mg-bt-60">О заводе</h1>
+                    <h1 class="section__title mg-bt-60 ckeditor" id="about_editor7" data-dir="about"
+                        @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                        @include('content.about.about_editor7')
+                    </h1>
 
                     <div class="page-description__text page-description__text--24">
-                        <p>Наша компания работает на рынке грузоподъёмного оборудования с 2011 года. За столь непродолжительный срок
-                            существования, менеджмент компании добился не только колоссальных успехов в реализации продукции, но также
-                            смог собрать и объединить высококвалифицированные кадры, работающие в области производства и обслуживания
-                            ГПО c 2001 года.</p>
+                        <p class="ckeditor" id="about_editor8" data-dir="about"
+                           @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                            @include('content.about.about_editor8')
+                        </p>
                     </div>
                 </section>
 
@@ -52,9 +85,11 @@
                     <div id="regular-page" class="content-container content-container--regular">
 
                         <div class="content-wrap">
-                            <p class="page-description__title-1 mg-bt-60 mg-t-70">Все это позволяет компании UNIQ Crane сохранять
-                                стабильную динамику
-                                развития и открывать для себя все новые высоты в области краностроения!</p>
+                            <p class="page-description__title-1 mg-bt-60 mg-t-70 ckeditor"
+                               id="about_editor9" data-dir="about"
+                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                @include('content.about.about_editor9')
+                            </p>
 
                             <div class="time-line">
                                 <!-- Left vertical line -->
@@ -72,16 +107,19 @@
                                             </div>
 
                                             <!-- The title -->
-                                            <div class="time-line__title">
-                                                2011
+                                            <div class="time-line__title ckeditor"
+                                                 id="about_editor10" data-dir="about"
+                                                 @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                @include('content.about.about_editor10')
                                             </div>
                                         </div>
 
                                         <!-- The description -->
                                         <div class="time-line__desc">
-                                            <p>Компания начинает деятельность по обслуживанию, монтажу и модернизации грузоподъёмного
-                                                оборудования, осуществляя параллельно поставку запчастей и комплектующих для кранов</p>
-
+                                            <p class="ckeditor" id="about_editor11" data-dir="about"
+                                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                @include('content.about.about_editor11')
+                                            </p>
                                         </div>
                                     </li>
 
@@ -94,15 +132,18 @@
                                             </div>
 
                                             <!-- The title -->
-                                            <div class="time-line__title">
-                                                2013
+                                            <div class="time-line__title ckeditor" id="about_editor12" data-dir="about"
+                                                 @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                @include('content.about.about_editor12')
                                             </div>
                                         </div>
 
                                         <!-- The description -->
                                         <div class="time-line__desc">
-                                            <p>Компания образовывает собственное производство кранов мостовых, консольных, лёгких козловых
-                                                кранов и несущих металлоконструкций (эстакад, крановых путей)</p>
+                                            <p class="ckeditor" id="about_editor13" data-dir="about"
+                                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                @include('content.about.about_editor13')
+                                            </p>
                                         </div>
                                     </li>
 
@@ -115,47 +156,69 @@
                                             </div>
 
                                             <!-- The title -->
-                                            <div class="time-line__title">
-                                                2014
+                                            <div class="time-line__title ckeditor" id="about_editor14" data-dir="about"
+                                                 @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                @include('content.about.about_editor14')
                                             </div>
                                         </div>
 
                                         <!-- The description -->
                                         <div class="time-line__desc">
-                                            <p class="mg-bt-30">Компания расширяет объёмы производства и диверсифицирует свою продукцию. Освоено
-                                                производство кранов мостовых взрыво и пожароопасного исполнения (до 32 тн), а также выпущен первый
-                                                козловой электрический кран г/п 32 т. Происходит ребрендинг и появляется новое торговое название
-                                                UNIQ CRANE.</p>
+                                            <p class="mg-bt-30 ckeditor" id="about_editor15" data-dir="about"
+                                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                @include('content.about.about_editor15')
+                                            </p>
                                             <div class="achievements">
 
                                                 <div class="achievements-wrap">
                                                     <div>
                                                         <div class="achievements-items achievements-items--white">
-                                                            <p class="achievements-items__numbers">362</p>
+                                                            <p class="achievements-items__numbers ckeditor"
+                                                               id="about_editor16" data-dir="about"
+                                                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                                @include('content.about.about_editor16')
+                                                            </p>
                                                         </div>
                                                     </div>
-                                                    <p class="achievements-items__text achievements-items__text--regular">Поставленных
-                                                        кранов</p>
+                                                    <p class="achievements-items__text achievements-items__text--regular ckeditor"
+                                                       id="about_editor17" data-dir="about"
+                                                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor17')
+                                                    </p>
                                                 </div>
 
                                                 <div class="achievements-wrap">
                                                     <div>
                                                         <div class="achievements-items achievements-items--white">
-                                                            <p class="achievements-items__numbers">84</p>
+                                                            <p class="achievements-items__numbers ckeditor"
+                                                               id="about_editor18" data-dir="about"
+                                                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                                @include('content.about.about_editor18')
+                                                            </p>
                                                         </div>
                                                     </div>
-                                                    <p class="achievements-items__text achievements-items__text--regular">установлинных эстакад
-                                                        и крановых путей</p>
+                                                    <p class="achievements-items__text achievements-items__text--regular ckeditor"
+                                                       id="about_editor19" data-dir="about"
+                                                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor19')
+                                                    </p>
                                                 </div>
 
                                                 <div class="achievements-wrap">
                                                     <div>
                                                         <div class="achievements-items achievements-items--white">
-                                                            <p class="achievements-items__numbers">512</p>
+                                                            <p class="achievements-items__numbers ckeditor"
+                                                               id="about_editor20" data-dir="about"
+                                                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                                @include('content.about.about_editor20')
+                                                            </p>
                                                         </div>
                                                     </div>
-                                                    <p class="achievements-items__text achievements-items__text--regular">Смонтированных подъемных
-                                                        механизмов</p>
+                                                    <p class="achievements-items__text achievements-items__text--regular ckeditor"
+                                                       id="about_editor21" data-dir="about"
+                                                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor21')
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -170,9 +233,9 @@
                                             </div>
 
                                             <!-- The title -->
-                                            <div class="time-line__title">
-                                                Миссия компании
-
+                                            <div class="time-line__title ckeditor" id="about_editor22" data-dir="about"
+                                                 @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                @include('content.about.about_editor22')
                                             </div>
                                         </div>
                                     </li>
@@ -181,57 +244,77 @@
                             </div>
 
                             <div class="mg-l-70">
-                                <p class="section__text mg-bt-50">Поставка оборудования, которое отвечает всем потребностям клиента
-                                    и обеспечивает максимально безопасную, и в тоже время эффективную эксплуатацию</p>
-                                <p class="section__text section__text-1">Поставка оборудования в оговорённые сроки, является для нас очень
-                                    важным качеством надёжного поставщика. Мы постоянно работаем и совершенствуемся над сроками производства
-                                    кранового оборудования. При всем этом мы понимаем, что качество нашей продукции не должно из-за этого
-                                    страдать. Поэтому мы делаем все планомерно и выверено.</p>
-                                <p class="section__text section__text-1">Мы предлагаем клиентам различные виды условий в поставке
-                                    ГПО и пытаемся во всем совершенствоваться, идя в ногу со всеми тенденциями на рынке!</p>
-                                <p class="section__text section__text-1">Но просим также наших клиентов помнить! Быстро, дёшево
-                                    и качественно — вместе, это взаимоисключающие факторы. Все это было выдумано недобросовестными
-                                    поставщиками, которые ставят целью лишь привлечение клиентов, а не удовлетворение их потребностей.</p>
-                                <p class="section__text section__text-1">Дорогие клиенты, используйте свой разум и опыт, а не желание
-                                    обмануть логику и здравый смысл.</p>
+                                <p class="section__text mg-bt-50 ckeditor" id="about_editor23" data-dir="about"
+                                   @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                    @include('content.about.about_editor23')
+                                </p>
+                                <p class="section__text section__text-1 ckeditor" id="about_editor24" data-dir="about"
+                                   @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                    @include('content.about.about_editor24')
+                                </p>
+                                <p class="section__text section__text-1 ckeditor" id="about_editor25" data-dir="about"
+                                   @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                    @include('content.about.about_editor25')
+                                </p>
+                                <p class="section__text section__text-1 ckeditor" id="about_editor26" data-dir="about"
+                                   @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                    @include('content.about.about_editor26')
+                                </p>
+                                <p class="section__text section__text-1 ckeditor" id="about_editor27" data-dir="about"
+                                   @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                    @include('content.about.about_editor27')
+                                </p>
                             </div>
                         </div>
 
                     </div>
                 </section>
 
-
-
                 <section class="section section--regular fp-auto-height">
 
                     <div id="regular-page" class="content-container content-container--regular">
 
                         <div class="content-wrap">
-                            <p class="section__title section__title--1">Производство</p>
+                            <p class="section__title section__title--1 ckeditor" id="about_editor28" data-dir="about"
+                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                @include('content.about.about_editor28')
+                            </p>
 
-                            <p class="section__text mg-bt-50">В настоящее время производственные мощности кранового завода UNIQ CRANE
-                                занимают 1350 квадратных метров и базируются на двух площадках:</p>
+                            <p class="section__text mg-bt-50 ckeditor" id="about_editor29" data-dir="about"
+                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                @include('content.about.about_editor29')
+                            </p>
 
                             <ul class="platform-list">
                                 <li class="platform-list__item">
-                                    <p><b>г. Железнодорожный </b> (Московская область, г. Железнодорожный, ул. Промышленная д.37)</p>
+                                    <p class="ckeditor" id="about_editor30" data-dir="about"
+                                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                        @include('content.about.about_editor30')
+                                    </p>
                                 </li>
                                 <li class="platform-list__item">
-                                    <p> <b>п. Шолоховский </b> (Ростовская область, Белокалитвинский район, п. Шолоховский, ул.
-                                        Социалистический д.7).</p>
+                                    <p class="ckeditor" id="about_editor31" data-dir="about"
+                                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                        @include('content.about.about_editor31')
+                                    </p>
                                 </li>
                             </ul>
 
-                            <p class="section__text section__text-1">В Железнодорожном происходит изготовление небольших изделий, таких
-                                как профильные пролетные балки, концевые балки, крановые тележки и токарные изделия. Крупные изделия,
-                                такие как, например, мостовые балки крана производятся в Ростовской области. Само помещение, включая
-                                земельный фонд в Ростовской области, находится в собственности завода.</p>
-                            <p class="section__text section__text-1"> Мы предлагаем Вам посетить и увидеть наши производственные
-                                возможности на любой из площадок. Посещения согласовываются по предварительной договоренности за 1 рабочий
-                                день.</p>
-
-
+                            <p class="section__text section__text-1 ckeditor" id="about_editor32" data-dir="about"
+                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                @include('content.about.about_editor32')
+                            </p>
+                            <p class="section__text section__text-1 ckeditor" id="about_editor33" data-dir="about"
+                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                @include('content.about.about_editor33')
+                            </p>
                             <div class="cards">
+                                <div class="cards-item cards-item--gallery">
+
+                                    <div class="cards-mask cards-mask--gallery">
+                                        <img src="./assets/img/icons/zoom.svg" alt="">
+                                    </div>
+                                </div>
 
                                 <div class="cards-item cards-item--gallery">
 
@@ -240,6 +323,12 @@
                                     </div>
                                 </div>
 
+                                <div class="cards-item cards-item--gallery">
+
+                                    <div class="cards-mask cards-mask--gallery">
+                                        <img src="./assets/img/icons/zoom.svg" alt="">
+                                    </div>
+                                </div>
 
                                 <div class="cards-item cards-item--gallery">
 
@@ -248,30 +337,12 @@
                                     </div>
                                 </div>
 
-
                                 <div class="cards-item cards-item--gallery">
 
                                     <div class="cards-mask cards-mask--gallery">
                                         <img src="./assets/img/icons/zoom.svg" alt="">
                                     </div>
                                 </div>
-
-
-                                <div class="cards-item cards-item--gallery">
-
-                                    <div class="cards-mask cards-mask--gallery">
-                                        <img src="./assets/img/icons/zoom.svg" alt="">
-                                    </div>
-                                </div>
-
-
-                                <div class="cards-item cards-item--gallery">
-
-                                    <div class="cards-mask cards-mask--gallery">
-                                        <img src="./assets/img/icons/zoom.svg" alt="">
-                                    </div>
-                                </div>
-
 
                                 <div class="cards-item cards-item--gallery">
 
@@ -311,7 +382,10 @@
                     <div id="regular-page" class="content-container content-container--regular">
 
                         <div class="content-wrap">
-                            <p class="section__title section__title--1">Сертификаты</p>
+                            <p class="section__title section__title--1 ckeditor" id="about_editor34" data-dir="about"
+                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                @include('content.about.about_editor34')
+                            </p>
 
                             <div class="cards">
 
@@ -410,24 +484,20 @@
                                         <img src="./assets/img/icons/zoom.svg" alt="">
                                     </div>
                                 </div>
-
-
-
-
                             </div>
 
                         </div>
                 </section>
-
 
                 <section class="section section--regular fp-auto-height">
 
                     <div id="regular-page" class="content-container content-container--regular">
 
                         <div class="content-wrap">
-                            <p class="section__title section__title--1">Наши приемущества</p>
-
-
+                            <p class="section__title section__title--1 ckeditor" id="about_editor35" data-dir="about"
+                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                @include('content.about.about_editor35')
+                            </p>
                             <div class="advantages">
 
                                 <div class="advantages-box advantages-box--regular">
@@ -437,12 +507,23 @@
                                         <div class="advantages-item__logo"><img src="./assets/img/advantages/shield 1b.svg" alt=""></div>
 
                                         <div class="advantages-box__wrap">
-                                            <h2 class="advantages-item__title">НАДЁЖНЫЙ КРАНОВЫЙ
-                                                ЗАВОД</h2>
-                                            <ul class="advantages-item__list">
-                                                <li>Более 7 лет активной работы на рынке России и СНГ</li>
-                                                <li> Доверительный уровень компании по всем базам.</li>
-                                                <li> Отсутствие судебной истории.</li>
+                                            <h2 class="advantages-item__title" id="about_editor36" data-dir="about"
+                                                @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                @include('content.about.about_editor36')
+                                            </h2>
+                                            <ul class="advantages-item__list ckeditor">
+                                                <li class=" ckeditor" id="about_editor37" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor37')
+                                                </li>
+                                                <li class="ckeditor" id="about_editor38" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor38')
+                                                </li>
+                                                <li class="ckeditor" id="about_editor39" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor39')
+                                                </li>
                                             </ul>
                                         </div>
 
@@ -453,14 +534,23 @@
                                         <div class="advantages-item__logo"><img src="./assets/img/advantages/shield 2b.svg" alt=""></div>
 
                                         <div class="advantages-box__wrap">
-                                            <h2 class="advantages-item__title">ВЫСОКОЕ КАЧЕСТВО
-                                                ОБОРУДОВАНИЯ</h2>
+                                            <h2 class="advantages-item__title ckeditor" id="about_editor40" data-dir="about"
+                                                @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                @include('content.about.about_editor40')
+                                            </h2>
                                             <ul class="advantages-item__list">
-                                                <li>Собственный отдел технического контроля
+                                                <li class="ckeditor" id="about_editor41" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor41')
                                                 </li>
-                                                <li> Полуавтоматическая сварка металлоконструкций и кранов
+                                                <li class="ckeditor" id="about_editor42" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor42')
                                                 </li>
-                                                <li> Болтовое соединение всех электрических кранов</li>
+                                                <li class="ckeditor" id="about_editor43" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor43')
+                                                </li>
                                             </ul>
                                         </div>
 
@@ -471,14 +561,23 @@
                                         <div class="advantages-item__logo"><img src="./assets/img/advantages/shield 3b.svg" alt=""></div>
 
                                         <div class="advantages-box__wrap">
-                                            <h2 class="advantages-item__title">РАБОТА В СЖАТЫЕ СРОКИ
+                                            <h2 class="advantages-item__title ckeditor" id="about_editor44" data-dir="about"
+                                                @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                @include('content.about.about_editor44')
                                             </h2>
                                             <ul class="advantages-item__list">
-                                                <li>Изготовление кранов от 15 рабочих дней
+                                                <li class="ckeditor" id="about_editor45" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor45')
                                                 </li>
-                                                <li>Поставка строго в обозначенные Договором сроки
+                                                <li class="ckeditor" id="about_editor46" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor46')
                                                 </li>
-                                                <li> Возможность выезда на монтаж в день поставки оборудования</li>
+                                                <li class="ckeditor" id="about_editor47" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor47')
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -488,15 +587,23 @@
                                         <div class="advantages-item__logo"><img src="./assets/img/advantages/shield 4b.svg" alt=""></div>
 
                                         <div class="advantages-box__wrap">
-                                            <h2 class="advantages-item__title">ВЫГОДНЫЕ ЦЕНЫ
-                                                НА ОБОРУДОВАНИЕ
+                                            <h2 class="advantages-item__title ckeditor" id="about_editor48" data-dir="about"
+                                                @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                @include('content.about.about_editor48')
                                             </h2>
                                             <ul class="advantages-item__list">
-                                                <li>Постоянные скидки, сезонные и от объёма
+                                                <li class="ckeditor" id="about_editor49" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor49')
                                                 </li>
-                                                <li> Дополнительное оборудование по ценам производителей
+                                                <li class="ckeditor" id="about_editor50" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor50')
                                                 </li>
-                                                <li> Минимальная доплата за дополнительные опции</li>
+                                                <li class="ckeditor" id="about_editor51" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor51')
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -505,15 +612,23 @@
                                         <div class="advantages-item__logo"><img src="./assets/img/advantages/shield 5b.svg" alt=""></div>
 
                                         <div class="advantages-box__wrap">
-                                            <h2 class="advantages-item__title">СЕРВИС
-                                                ВЫСОКОГО УРОВНЯ</h2>
+                                            <h2 class="advantages-item__title ckeditor" id="about_editor52" data-dir="about"
+                                                @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                @include('content.about.about_editor52')
+                                            </h2>
                                             <ul class="advantages-item__list">
-                                                <li>Возможность срочного монтажа и ремонта в день обращения
-
+                                                <li class="ckeditor" id="about_editor53" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor53')
                                                 </li>
-                                                <li> Возможность срочного монтажа и ремонта в день обращения
+                                                <li class="ckeditor" id="about_editor54" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor54')
                                                 </li>
-                                                <li> Возможность проведения работ в выходные дни</li>
+                                                <li class="ckeditor" id="about_editor55" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor55')
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -522,37 +637,42 @@
                                         <div class="advantages-item__logo"><img src="./assets/img/advantages/shield 6b.svg" alt=""></div>
 
                                         <div class="advantages-box__wrap">
-                                            <h2 class="advantages-item__title">ВЫГОДНЫЕ УСЛОВИЯ
-                                                СОТРУДНИЧЕСТВА</h2>
+                                            <h2 class="advantages-item__title ckeditor" id="about_editor56" data-dir="about"
+                                                @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                @include('content.about.about_editor56')
+                                            </h2>
                                             <ul class="advantages-item__list">
-                                                <li>Выгодная доставка по всей России и СНГ
+                                                <li class="ckeditor" id="about_editor57" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor57')
                                                 </li>
-                                                <li> Возможна оплата по факту выполнения работ
+                                                <li class="ckeditor" id="about_editor58" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor58')
                                                 </li>
-                                                <li> Возможна работа по на ваших условиях</li>
+                                                <li class="ckeditor" id="about_editor59" data-dir="about"
+                                                    @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                    @include('content.about.about_editor59')
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
-
-
                         </div>
-
                     </div>
                 </section>
-
-
-
 
                 <section class="section section--regular fp-auto-height">
 
                     <div id="regular-page" class="content-container content-container--regular">
 
                         <div class="content-wrap">
-                            <p class="section__title section__title--1">Наши клиенты</p>
-
+                            <p class="section__title section__title--1 ckeditor" id="about_editor60" data-dir="about"
+                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                @include('content.about.about_editor60')
+                            </p>
 
                             <div class="clients-box clients-box--regular">
                                 <div class="clients__item clients__item--regular"><img src="./assets/img/clients/regular/1.png" alt="">
@@ -621,7 +741,6 @@
                                 </div>
                             </div>
 
-
                         </div>
 
                     </div>
@@ -633,8 +752,10 @@
                     <div id="regular-page" class="content-container content-container--regular">
 
                         <div class="content-wrap">
-                            <p class="section__title section__title--1">Отзывы</p>
-
+                            <p class="section__title section__title--1 ckeditor" id="about_editor61" data-dir="about"
+                               @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                @include('content.about.about_editor61')
+                            </p>
 
                             <div class="review-box">
                                 <div class="swiper-container mySwiper-Regular">
@@ -643,19 +764,16 @@
 
                                             <div class="review-wrap">
                                                 <header class="review-header review-header--regular">
-                                                    <h3 class="review-header__title">ЗАО «ЭРПАК»</h3>
+                                                    <h3 class="review-header__title ckeditor" id="about_editor62" data-dir="about"
+                                                        @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor62')
+                                                    </h3>
                                                     <a href="#" class="review-header__scan-link">Смотреть скан отзыва</a>
                                                 </header>
                                                 <div class="review__text">
-                                                    <p>Выражаю компании ЮНИК КРАН свою благодарность за поставку мостового однобалочного крана с
-                                                        талью
-                                                        в
-                                                        оговоренный Договором срок (13 рабочих дней). Всё оборудование было поставлено высокого
-                                                        качества
-                                                        и
-                                                        в полном комплекте. Таким образом компания ЮНИК КРАН зарекомендовала себя как надежный и
-                                                        грамотный
-                                                        поставщик грузоподъемного оборудования, полностью выполняющий взятые на себя обстоятельства
+                                                    <p class="ckeditor" id="about_editor63" data-dir="about"
+                                                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor63')
                                                     </p>
                                                 </div>
                                             </div>
@@ -664,19 +782,16 @@
 
                                             <div class="review-wrap">
                                                 <header class="review-header review-header--regular">
-                                                    <h3 class="review-header__title">ЗАО «ЭРПАК»</h3>
+                                                    <h3 class="review-header__title ckeditor" id="about_editor64" data-dir="about"
+                                                        @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor64')
+                                                    </h3>
                                                     <a href="#" class="review-header__scan-link">Смотреть скан отзыва</a>
                                                 </header>
                                                 <div class="review__text">
-                                                    <p>Выражаю компании ЮНИК КРАН свою благодарность за поставку мостового однобалочного крана с
-                                                        талью
-                                                        в
-                                                        оговоренный Договором срок (13 рабочих дней). Всё оборудование было поставлено высокого
-                                                        качества
-                                                        и
-                                                        в полном комплекте. Таким образом компания ЮНИК КРАН зарекомендовала себя как надежный и
-                                                        грамотный
-                                                        поставщик грузоподъемного оборудования, полностью выполняющий взятые на себя обстоятельства
+                                                    <p class="ckeditor" id="about_editor65" data-dir="about"
+                                                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor65')
                                                     </p>
                                                 </div>
                                             </div>
@@ -685,19 +800,16 @@
 
                                             <div class="review-wrap">
                                                 <header class="review-header review-header--regular">
-                                                    <h3 class="review-header__title">ЗАО «ЭРПАК»</h3>
+                                                    <h3 class="review-header__title ckeditor" id="about_editor66" data-dir="about"
+                                                        @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor66')
+                                                    </h3>
                                                     <a href="#" class="review-header__scan-link">Смотреть скан отзыва</a>
                                                 </header>
                                                 <div class="review__text">
-                                                    <p>Выражаю компании ЮНИК КРАН свою благодарность за поставку мостового однобалочного крана с
-                                                        талью
-                                                        в
-                                                        оговоренный Договором срок (13 рабочих дней). Всё оборудование было поставлено высокого
-                                                        качества
-                                                        и
-                                                        в полном комплекте. Таким образом компания ЮНИК КРАН зарекомендовала себя как надежный и
-                                                        грамотный
-                                                        поставщик грузоподъемного оборудования, полностью выполняющий взятые на себя обстоятельства
+                                                    <p class="ckeditor" id="about_editor67" data-dir="about"
+                                                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor67')
                                                     </p>
                                                 </div>
                                             </div>
@@ -706,19 +818,16 @@
 
                                             <div class="review-wrap">
                                                 <header class="review-header review-header--regular">
-                                                    <h3 class="review-header__title">ЗАО «ЭРПАК»</h3>
+                                                    <h3 class="review-header__title ckeditor" id="about_editor68" data-dir="about"
+                                                        @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor68')
+                                                    </h3>
                                                     <a href="#" class="review-header__scan-link">Смотреть скан отзыва</a>
                                                 </header>
                                                 <div class="review__text">
-                                                    <p>Выражаю компании ЮНИК КРАН свою благодарность за поставку мостового однобалочного крана с
-                                                        талью
-                                                        в
-                                                        оговоренный Договором срок (13 рабочих дней). Всё оборудование было поставлено высокого
-                                                        качества
-                                                        и
-                                                        в полном комплекте. Таким образом компания ЮНИК КРАН зарекомендовала себя как надежный и
-                                                        грамотный
-                                                        поставщик грузоподъемного оборудования, полностью выполняющий взятые на себя обстоятельства
+                                                    <p class="ckeditor" id="about_editor69" data-dir="about"
+                                                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor69')
                                                     </p>
                                                 </div>
                                             </div>
@@ -727,19 +836,16 @@
 
                                             <div class="review-wrap">
                                                 <header class="review-header review-header--regular">
-                                                    <h3 class="review-header__title">ЗАО «ЭРПАК»</h3>
+                                                    <h3 class="review-header__title ckeditor" id="about_editor70" data-dir="about"
+                                                        @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor70')
+                                                    </h3>
                                                     <a href="#" class="review-header__scan-link">Смотреть скан отзыва</a>
                                                 </header>
                                                 <div class="review__text">
-                                                    <p>Выражаю компании ЮНИК КРАН свою благодарность за поставку мостового однобалочного крана с
-                                                        талью
-                                                        в
-                                                        оговоренный Договором срок (13 рабочих дней). Всё оборудование было поставлено высокого
-                                                        качества
-                                                        и
-                                                        в полном комплекте. Таким образом компания ЮНИК КРАН зарекомендовала себя как надежный и
-                                                        грамотный
-                                                        поставщик грузоподъемного оборудования, полностью выполняющий взятые на себя обстоятельства
+                                                    <p class="ckeditor" id="about_editor71" data-dir="about"
+                                                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor71')
                                                     </p>
                                                 </div>
                                             </div>
@@ -748,19 +854,16 @@
 
                                             <div class="review-wrap">
                                                 <header class="review-header review-header--regular">
-                                                    <h3 class="review-header__title">ЗАО «ЭРПАК»</h3>
+                                                    <h3 class="review-header__title ckeditor" id="about_editor72" data-dir="about"
+                                                        @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor72')
+                                                    </h3>
                                                     <a href="#" class="review-header__scan-link">Смотреть скан отзыва</a>
                                                 </header>
                                                 <div class="review__text">
-                                                    <p>Выражаю компании ЮНИК КРАН свою благодарность за поставку мостового однобалочного крана с
-                                                        талью
-                                                        в
-                                                        оговоренный Договором срок (13 рабочих дней). Всё оборудование было поставлено высокого
-                                                        качества
-                                                        и
-                                                        в полном комплекте. Таким образом компания ЮНИК КРАН зарекомендовала себя как надежный и
-                                                        грамотный
-                                                        поставщик грузоподъемного оборудования, полностью выполняющий взятые на себя обстоятельства
+                                                    <p class="ckeditor" id="about_editor73" data-dir="about"
+                                                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor73')
                                                     </p>
                                                 </div>
                                             </div>
@@ -769,19 +872,16 @@
 
                                             <div class="review-wrap">
                                                 <header class="review-header review-header--regular">
-                                                    <h3 class="review-header__title">ЗАО «ЭРПАК»</h3>
+                                                    <h3 class="review-header__title ckeditor" id="about_editor74" data-dir="about"
+                                                        @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor74')
+                                                    </h3>
                                                     <a href="#" class="review-header__scan-link">Смотреть скан отзыва</a>
                                                 </header>
                                                 <div class="review__text">
-                                                    <p>Выражаю компании ЮНИК КРАН свою благодарность за поставку мостового однобалочного крана с
-                                                        талью
-                                                        в
-                                                        оговоренный Договором срок (13 рабочих дней). Всё оборудование было поставлено высокого
-                                                        качества
-                                                        и
-                                                        в полном комплекте. Таким образом компания ЮНИК КРАН зарекомендовала себя как надежный и
-                                                        грамотный
-                                                        поставщик грузоподъемного оборудования, полностью выполняющий взятые на себя обстоятельства
+                                                    <p class="ckeditor" id="about_editor75" data-dir="about"
+                                                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor75')
                                                     </p>
                                                 </div>
                                             </div>
@@ -790,19 +890,16 @@
 
                                             <div class="review-wrap">
                                                 <header class="review-header review-header--regular">
-                                                    <h3 class="review-header__title">ЗАО «ЭРПАК»</h3>
+                                                    <h3 class="review-header__title ckeditor" id="about_editor76" data-dir="about"
+                                                        @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor76')
+                                                    </h3>
                                                     <a href="#" class="review-header__scan-link">Смотреть скан отзыва</a>
                                                 </header>
                                                 <div class="review__text">
-                                                    <p>Выражаю компании ЮНИК КРАН свою благодарность за поставку мостового однобалочного крана с
-                                                        талью
-                                                        в
-                                                        оговоренный Договором срок (13 рабочих дней). Всё оборудование было поставлено высокого
-                                                        качества
-                                                        и
-                                                        в полном комплекте. Таким образом компания ЮНИК КРАН зарекомендовала себя как надежный и
-                                                        грамотный
-                                                        поставщик грузоподъемного оборудования, полностью выполняющий взятые на себя обстоятельства
+                                                    <p class="ckeditor" id="about_editor77" data-dir="about"
+                                                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor77')
                                                     </p>
                                                 </div>
                                             </div>
@@ -811,19 +908,16 @@
 
                                             <div class="review-wrap ">
                                                 <header class="review-header review-header--regular">
-                                                    <h3 class="review-header__title">ЗАО «ЭРПАК»</h3>
+                                                    <h3 class="review-header__title ckeditor" id="about_editor78" data-dir="about"
+                                                        @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor78')
+                                                    </h3>
                                                     <a href="#" class="review-header__scan-link">Смотреть скан отзыва</a>
                                                 </header>
                                                 <div class="review__text">
-                                                    <p>Выражаю компании ЮНИК КРАН свою благодарность за поставку мостового однобалочного крана с
-                                                        талью
-                                                        в
-                                                        оговоренный Договором срок (13 рабочих дней). Всё оборудование было поставлено высокого
-                                                        качества
-                                                        и
-                                                        в полном комплекте. Таким образом компания ЮНИК КРАН зарекомендовала себя как надежный и
-                                                        грамотный
-                                                        поставщик грузоподъемного оборудования, полностью выполняющий взятые на себя обстоятельства
+                                                    <p class="ckeditor" id="about_editor79" data-dir="about"
+                                                       @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
+                                                        @include('content.about.about_editor79')
                                                     </p>
                                                 </div>
                                             </div>
