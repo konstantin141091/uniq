@@ -13,9 +13,8 @@
         </nav>
 
         <section class="mg-bt-50">
-            <h1 class="section__title mg-bt-35">
+            <h1 class="section__title mg-bt-35 ckeditor" id="contacts_editor1" data-dir="contacts" @if(isset(Auth::user()->is_admin)) contenteditable="true" @endif>
                 @include('content.contacts.contacts_editor1')
-                Контакты
             </h1>
         </section>
 

@@ -40,4 +40,13 @@ Route::group([
     Route::get('/', 'AdminController@index')->name('index');
     Route::post('/edit', 'AdminController@editContent')->name('edit');
 //    Route::get('/makeInclude', 'CmsController@makeInclude')->name('makeInclude');
+
+    Route::group([
+        'prefix' => 'seo',
+        'as' => 'seo.'
+    ], function () {
+       Route::get('/', 'SeoController@index')->name('index');
+       Route::get('/edit/{id}', 'SeoController@edit')->name('edit');
+       Route::post('/update/{id}', 'SeoController@update')->name('update');
+    });
 });

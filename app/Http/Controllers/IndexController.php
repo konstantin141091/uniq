@@ -19,31 +19,43 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view('index');
+        return view('index', [
+            'seo' => $this->getSeoModel('index'),
+        ]);
     }
 
     public function about()
     {
-        return view('pages.about');
+        return view('pages.about', [
+            'seo' => $this->getSeoModel('about'),
+        ]);
     }
 
     public function contacts()
     {
-        return view('pages.contacts');
+        return view('pages.contacts', [
+            'seo' => $this->getSeoModel('contacts'),
+        ]);
     }
 
     public function service()
     {
-        return view('pages.service');
+        return view('pages.service', [
+            'seo' => $this->getSeoModel('service'),
+        ]);
     }
 
     public function equipment()
     {
-        return view('pages.equipment');
+        return view('pages.equipment', [
+            'seo' => $this->getSeoModel('equipment'),
+        ]);
     }
 
     public function calculate()
     {
-        return view('pages.calculate');
+        return view('pages.calculate', [
+            'seo' => $this->getSeoModel('calculate'),
+        ]);
     }
 }

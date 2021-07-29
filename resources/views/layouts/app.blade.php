@@ -7,7 +7,17 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <!-- SEO -->
+    <meta name="description" content="
+    @if(!@is_null($seo->description))
+        {{ $seo->description }}
+    @endif">
+    <meta name="keywords" content="
+    @if(!@is_null($seo->keywords))
+        {{ $seo->keywords }}
+    @endif">
+
+    <title>{{ $seo->title }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -39,7 +49,9 @@
 <form action="" id="admin-csrf">
     @csrf
 </form>
-
+<div class="alert-msg" id="admin-msg">
+    <p>Изменения сохранены</p>
+</div>
 <div class="container container--regular">
     <header class="header">
         <div class="header__open-menu">
